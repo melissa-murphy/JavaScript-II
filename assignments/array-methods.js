@@ -486,7 +486,18 @@ console.log(ticketPriceTotal);
 // Now that you have used .forEach(), .map(), .filter(), and .reduce().  I want you to think of potential problems you could solve given the data set and the 5k fun run theme.  Try to create and then solve 3 unique problems using one or many of the array methods listed above.
 
 // Problem 1
+// The companies all want their name in caps
+let companyNames = [];
+companyNames = runners.map(runner => runner.company_name.toUpperCase());
+console.log(companyNames);
 
 // Problem 2
-
+// Starting order alphabetically by last name
+let runningOrder = [];
+runners.forEach(runner => runningOrder.push(`${runner.last_name}`));
+console.log(runningOrder.sort());
 // Problem 3
+// Create mailing list for runners
+let runnerEmailList = [];
+runners.forEach(runner => runnerEmailList.push(`${runner.email}`));
+console.log(runnerEmailList);
