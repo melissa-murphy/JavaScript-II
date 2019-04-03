@@ -84,15 +84,20 @@ console.log(contains('Gum'));
 
 const moreItems = ['ruler', 'calculator', 'lunchbox'];
 // add items and moreItems to newBackpack
-const newBackpack = [];
- function packBackpack(arr1, arr2) {
-   newBackpack.push(arr1, arr2);
-   return newBackpack;
- }
 
-console.log(packBackpack(items, items));
+let packedBackpack = []
+function packBackpack(arr1, arr2, arr3) {
+  packedBackpack.push(arr1, arr2, arr3);
+  return packedBackpack;
+}
+packedBackpack = [packBackpack(items, items, moreItems)];
+console.log(packedBackpack);
 
 function removeDuplicates(array, cb) {
   // removeDuplicates removes all duplicate values from the given array.
   // Pass the duplicate free array to the callback function.
   // Do not mutate the original array.
+  
+}
+
+console.log(removeDuplicates(packedBackpack));
