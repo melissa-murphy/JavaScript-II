@@ -98,3 +98,4 @@ function removeDuplicates(array, cb) {
 }
 
 console.log(removeDuplicates(packedBackpack));
+// console.log(packedBackpack); <-- calls array from prior to function because enclosures!
