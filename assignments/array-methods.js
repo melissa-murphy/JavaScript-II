@@ -498,6 +498,6 @@ runners.forEach(runners => runningOrder.push(`${runners.last_name}`));
 console.log(runningOrder.sort());
 // Problem 3
 // Create mailing list for runners
-let runnerEmailList = [];
+let runnersEmailList = [];
 runners.forEach(runners => runnersEmailList.push(`${runners.email}`));
 console.log(runnersEmailList);
